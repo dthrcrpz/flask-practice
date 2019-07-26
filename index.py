@@ -11,7 +11,7 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/flask_practice"
 from controllers.UserController import UserController
 
 @app.route('/', methods=['GET', 'POST'])
-def haha():
+def start():
 	controller = UserController
 	if request.method == 'GET':
 		return controller.index()
